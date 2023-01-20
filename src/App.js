@@ -1,12 +1,19 @@
+import { Route, Routes} from "react-router-dom";
 import "./App.css";
-import DirectoryComponent from "./components/directory/DirectoryComponent";
+import Home from "./components/routes/home/Home";
+import Navigation from "./components/routes/navigation/Navigation";
+import SignIn from "./components/routes/sign-in/SignIn";
+
 
 
 function App() {
   return (
-    <>
-      <DirectoryComponent/>
-    </>
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path="/sign-in" element={<SignIn/>} />
+      </Route>
+    </Routes>
   );
 }
 

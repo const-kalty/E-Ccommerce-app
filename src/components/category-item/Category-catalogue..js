@@ -1,4 +1,3 @@
-
 const Categorycatalogue = [
   {
     id: 1,
@@ -26,6 +25,5 @@ const Categorycatalogue = [
     imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
   },
 ];
- 
 
-export default Categorycatalogue
+export default Categorycatalogue;
