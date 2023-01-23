@@ -52,7 +52,7 @@ const SignUp = () => {
         
      <FormInput label="Display Name"
           required
-          type="email"
+          type="text"
           onChange={changeHandler}
           name="displayName"
           value={displayName}
