@@ -1,16 +1,17 @@
-import React from 'react'
-import './directory.styles.scss'
-import Categorycatalogue from '../category-item/Category-catalogue.';
-import CategoryItem from '../category-item/Category-item-component';
+import React from "react";
+import "./directory.styles.jsx";
+import CategoryCatalogue from "../directory-item/Category-catalogue.";
+import DirectoryItem from "../directory-item/DirectoryItemComponent";
+import { DirectoryContainer } from "./directory.styles.jsx";
 
 const DirectoryComponent = () => {
   return (
-    <div className="directory-container">
-      {Categorycatalogue.map((category) => (
-        <CategoryItem key={category.id} category={category} />
+    <DirectoryContainer>
+      {CategoryCatalogue.map((category) => (
+        <DirectoryItem key={category.id} category={category} />
       ))}
-    </div>
+    </DirectoryContainer>
   );
-}
+};
 
-export default DirectoryComponent
+export default DirectoryComponent;
